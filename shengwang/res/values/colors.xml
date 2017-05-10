@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="divider_list">#d4d4d4</color>
+    <color name="togg_selected">#e6a519</color>
+    <color name="togg_unselected">#cfcfcf</color>
+</resources>

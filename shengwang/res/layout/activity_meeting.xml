@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <FrameLayout
+            android:id="@+id/view_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            
+            <Chronometer  
+			    android:id="@+id/chronometer"   
+			    android:layout_width="match_parent"  
+			    android:layout_height="wrap_content"
+			    android:paddingStart="8dp"
+			    android:paddingTop="3dp"
+			    android:paddingEnd="8dp"
+			    android:textColor="#00ff00"
+			    android:textSize="24sp"
+			    android:textAlignment="textEnd" />"
+            
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp" >
+
+            <Button
+                android:id="@+id/btn_addcall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/selector_toolbar_add" />
+
+            <Button
+                android:id="@+id/btn_mute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/selector_toolbar_mute" />
+
+            <Button
+                android:id="@+id/btn_hangup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/selector_toolbar_hangup" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <include
+	        android:id="@+id/right_sliding"
+	        android:layout_width="230dp"
+	        android:layout_height="match_parent"
+	        android:layout_gravity="end"
+	        layout="@layout/addcall_layout" />
+
+</android.support.v4.widget.DrawerLayout>

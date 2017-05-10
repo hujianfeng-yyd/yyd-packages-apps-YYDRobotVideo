@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.test.MainActivity" >
+
+    <item
+        android:id="@+id/add_friend"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/add_friend"/>
+    
+    <item
+        android:id="@+id/remove_friend"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/remove_friend"/>
+    
+    <item
+        android:id="@+id/edit_friend_nickname"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/edit_friend_nickname"/>
+
+</menu>

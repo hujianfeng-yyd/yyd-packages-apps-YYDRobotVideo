@@ -1,0 +1,101 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_background"
+    android:baselineAligned="false"
+    android:orientation="vertical" >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp" >
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/selector_actionbar_back" />
+
+    <Button
+        android:id="@+id/recharge_bt"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="20dp"
+        android:text="@string/recharge_title"
+        android:layout_alignParentEnd="true"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignBottom="@+id/residual_time_tv"
+        android:layout_toStartOf="@+id/residual_time_tv"
+        android:text="@string/residual_time"
+        android:textColor="@android:color/white"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/residual_time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/recharge_bt"
+        android:text="@string/residual_time_default"
+        android:textColor="@android:color/white"
+        android:textSize="24sp" />
+
+</RelativeLayout>
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    >
+  <LinearLayout 
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      android:gravity="center"
+      
+      >
+<Button
+    android:id="@+id/btn_dial"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_dial_plate" /> 
+<TextView
+    android:id="@+id/tv_name"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@android:color/white"
+    android:ems="5"
+    android:gravity="center"
+    android:textSize="16sp"
+    />
+<TextView
+    android:id="@+id/tv_id"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:ems="5"
+    android:gravity="center_horizontal"
+    android:textColor="@android:color/white"
+    android:textSize="16sp"
+    />    
+  </LinearLayout>
+
+    
+<GridView
+    android:id="@+id/friend_gridview" 
+    android:layout_marginStart="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:numColumns="3"
+    ></GridView>
+</LinearLayout>
+</LinearLayout>

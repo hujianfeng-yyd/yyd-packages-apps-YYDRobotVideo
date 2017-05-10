@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <EditTextPreference
+        android:dialogTitle="请输入视频宽"
+        android:key="video_width_preference"
+        android:defaultValue="320"
+        android:summary="默认值：320"
+        android:title="视频宽" />
+    <EditTextPreference
+        android:dialogTitle="请输入视频高"
+        android:key="video_heigit_preference"
+        android:defaultValue="240"
+        android:summary="默认值：240"
+        android:title="视频高" />
+    <EditTextPreference
+        android:dialogTitle="请输入帧率"
+        android:key="video_fps_preference"
+        android:defaultValue="15"
+        android:summary="默认值：15"
+        android:title="帧率" />
+    
+</PreferenceScreen>

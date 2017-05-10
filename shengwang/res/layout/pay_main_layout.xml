@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".activity.ActivityVideoSizeSetting" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+             
+         >
+
+        <Button
+            android:id="@+id/pay_help_bt"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginStart="20dp"
+            android:text="@string/pay_help"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/residual_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/pay_help_bt"
+            android:text="@string/residual_time_default" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="17dp"
+            android:layout_toLeftOf="@+id/residual_time_tv"
+            android:text="@string/residual_time" />
+
+        <ImageView
+            android:id="@+id/pay_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:background="@drawable/selector_actionbar_back" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pay_type_select_title" />
+
+        <GridLayout
+            android:id="@+id/pay_type_select_layout"
+            android:paddingRight="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            
+            android:layout_marginTop="10dp"
+            android:columnCount="3"
+            android:layout_gravity="center"
+            android:rowCount="2" >
+
+            <ToggleButton
+                android:id="@+id/pay_type_one_tg"
+                android:layout_width="110dp"
+                android:layout_height="40dp"
+                android:text="@string/pay_type_one"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:textOff="@string/pay_type_one"  
+                android:textOn="@string/pay_type_one"
+                android:background="@drawable/toggleselect"
+                android:checked="true"
+                />
+
+            <ToggleButton
+                android:id="@+id/pay_type_two_tg"
+                android:layout_marginStart="30dp"
+                android:layout_width="110dp"
+                android:layout_height="40dp"
+                android:text="@string/pay_type_two"
+                android:textSize="12sp"
+                android:textOff="@string/pay_type_two"  
+                android:textOn="@string/pay_type_two"
+                android:background="@drawable/toggleselect"/>
+
+            <ToggleButton
+                android:id="@+id/pay_type_three_tg"
+                android:layout_marginStart="30dp"
+                android:layout_width="110dp"
+                android:layout_height="40dp"
+                android:text="@string/pay_type_three"
+                android:textSize="12sp"
+                android:textOff="@string/pay_type_three"  
+                android:textOn="@string/pay_type_three"
+                android:background="@drawable/toggleselect" />
+
+            <ToggleButton
+                android:id="@+id/pay_type_four_tg"
+                android:layout_marginTop="20dp"
+                android:layout_width="110dp"
+                android:layout_height="40dp"
+                android:text="@string/pay_type_four"
+                android:textSize="12sp"
+                android:textOff="@string/pay_type_four"  
+                android:textOn="@string/pay_type_four"
+                android:background="@drawable/toggleselect" />
+
+            <ToggleButton
+                android:id="@+id/pay_type_five_tg"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="30dp"
+                android:layout_width="110dp"
+                android:layout_height="40dp"
+                android:text="@string/pay_type_five"
+                android:textSize="12sp"
+                android:textOff="@string/pay_type_five"  
+                android:textOn="@string/pay_type_five"
+                android:background="@drawable/toggleselect" />
+
+            <ToggleButton
+                android:id="@+id/pay_type_six_tg"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="30dp"
+                android:layout_width="110dp"
+                android:layout_height="40dp"
+                android:text="@string/pay_type_six"
+                android:textSize="12sp"
+                android:textOff="@string/pay_type_six"  
+                android:textOn="@string/pay_type_six"
+                android:background="@drawable/toggleselect" />
+        </GridLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal" >
+
+      <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pay_method_title" />
+      <RadioGroup
+        android:id="@+id/radioGroup_paytype"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="20dp"        
+        android:layout_weight="1"
+        >
+
+        <RadioButton
+            android:id="@+id/pay_type_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/pay_alipay" />
+
+        <RadioButton
+            android:id="@+id/pay_type_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pay_weixin" />
+
+    </RadioGroup>
+        <Button
+            android:id="@+id/bt_sumbit"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:text="@string/pay_confirm"
+            android:layout_gravity="end|bottom"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</LinearLayout>

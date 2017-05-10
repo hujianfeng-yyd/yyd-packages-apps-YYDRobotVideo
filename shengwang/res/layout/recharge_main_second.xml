@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    >
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+        
+    >
+  <ImageView
+    android:id="@+id/pay_back"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_actionbar_back" />    
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="40sp"
+    android:textStyle="bold"
+    android:text="@string/recharge_title"
+    android:layout_centerInParent="true"
+    />  
+    
+</RelativeLayout>
+
+<LinearLayout 
+    android:layout_marginTop="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_horizontal"
+    >
+<TextView 
+    android:layout_marginTop="20dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    android:text="@string/robot_id"
+    android:layout_gravity="center_horizontal"
+    />
+
+  <TextView
+    android:id="@+id/robot_rid_tv" 
+    android:layout_marginTop="20dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    android:text="@string/robot_id_default"
+    android:layout_gravity="center_horizontal"
+    />  
+    <TextView 
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="20dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    android:text="@string/pay_time_title"
+    android:layout_gravity="center_horizontal"
+    />
+  <TextView
+    android:id="@+id/pay_time_tv" 
+    android:layout_marginTop="20dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    android:text="@string/pay_time_default"
+    android:layout_gravity="center_horizontal"
+    />
+<TextView
+    android:layout_marginStart="10dp" 
+    android:layout_marginTop="20dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    android:text="@string/pay_amount"
+    android:layout_gravity="center_horizontal"
+    />
+<TextView 
+    android:id="@+id/pay_amount_tv"
+    android:layout_marginTop="20dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    android:text="@string/pay_amount_default"
+    android:layout_gravity="center_horizontal"
+    />
+</LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:orientation="vertical"
+    android:layout_weight="1"
+    android:gravity="center"
+    >
+<ImageView
+    android:id="@+id/qrcode_iv" 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:contentDescription="@string/app_name"
+    />
+</LinearLayout>
+<TextView
+    android:id="@+id/rechange_type_tip" 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    android:text="@string/rechange_alipay_tip"
+    android:layout_gravity="bottom|center_horizontal"
+    />
+</LinearLayout>

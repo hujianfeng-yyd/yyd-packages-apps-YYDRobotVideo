@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">YYDRobotVideo</string>
+    <string name="call_duration">call duration</string>
+    <string name="Refused">Refused</string>
+    <string name="The_other_party_has_refused_to">Call was refused</string>
+    <string name="The_other_is_not_online">The peer is not online</string>
+    <string name="The_other_is_on_the_phone">The peer is on the phone</string>
+    <string name="The_other_party_did_not_answer">The peer did not answer</string>
+    <string name="did_not_answer">did not answer</string>
+    <string name="Has_been_cancelled">Cancelled</string>
+    <string name="mute">Mute</string>
+    <string name="Hands_free">Hands free</string>
+    <string name="hang_up">Hang up</string>
+    <string name="answer">Answer</string>
+    <string name="Are_connected_to_each_other">Connecting to peer..</string>
+    <string name="Is_not_yet_connected_to_the_server">Not connect to server</string>
+    <string name="have_connected_with">Connected to the peer and waiting for the peer to accept</string>
+    <string name="direct_call">Direct</string>
+    <string name="relay_call">Relay</string>
+    <string name="In_the_call">In the call..</string>
+    <string name="The_other_party_refused_to_accept">The call was refused</string>
+    <string name="Connection_failure">Connection failed!</string>
+    <string name="The_other_party_is_not_online">The peer is not online now, please try later</string>
+    <string name="The_other_is_on_the_phone_please">The peer is busy now, please try later</string>
+    <string name="The_other_is_hang_up">The peer has ended the call</string>
+    <string name="hanging_up">Hanging up..</string>
+    <string name="nofound_image">Notfound_image</string>
+</resources>
